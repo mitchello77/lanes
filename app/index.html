@@ -16,12 +16,39 @@
   <![endif]-->
 </head>
 <body>
-  <main>
+  <div class="screen" id="intro">
+    <h1>Welcome to Lanes</h1>
+    <div class="subheading">
+      A prototype of ...
+    </div>
+    <div class="">
+      Touch to begin
+    </div>
+  </div>
+  <div class="screen" id="login">
+    <header>
+      <button type="button" name="toggleMenu" class="btn menu"></button>
+      <h2></h2>
+      <button type="button" name="search" class="btn search"></button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li></li>
+        </ul>
+      </nav>
+      <div id="search">
+        <input type="text" name="" value="">
+      </div>
 
-  </main>
+    </main>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+
 
   <!-- build:js scripts/main.min.js async -->
   <script src="scripts/main.js"></script>
