@@ -16,7 +16,7 @@
   <![endif]-->
 </head>
 <body>
-  <div class="screen" id="intro">
+  <div class="screen hidden" id="intro">
     <h1>Welcome to Lanes</h1>
     <div class="subheading">
       A prototype of ...
@@ -25,10 +25,15 @@
       Touch to begin
     </div>
   </div>
+
   <div class="screen" id="login">
     <header>
-      <button type="button" name="toggleMenu" class="btn menu"></button>
-      <h2></h2>
+      <button type="button" name="toggleMenu" class="btn menu hamburger hamburger--arrow">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h2>Screen Title</h2>
       <button type="button" name="search" class="btn search"></button>
     </header>
     <main>
@@ -37,7 +42,7 @@
           <li></li>
         </ul>
       </nav>
-      <div id="search">
+      <div class="search">
         <input type="text" name="" value="">
       </div>
 

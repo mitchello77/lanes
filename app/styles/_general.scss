@@ -9,14 +9,25 @@
 }
 header {
   display: flex;
-  height: 10vh;
+  height: 8%;
+  min-height: 50px;
   background-color: green;
+  justify-content: space-between;
+  align-items: center;
+
+  button.search {
+    @include normalizeButton();
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    background-color: Orange;
+  }
 }
 
 main {
   position: relative;
   display: flex;
-  height: 90vh;
+  height: 90%;
   background-color: red;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -27,8 +38,12 @@ main {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-
+    left: -60%;
+    transition: left 0.15s;
+    transition-timing-function: ease-out;
+    &.is-active{
+      left: 0;
+    }
     ul {
       width: 100%;
       li {
@@ -38,11 +53,28 @@ main {
     }
   }
 
-  #search {
+  .search {
     position: absolute;
-    top: 10vh;
+    top: -9%;
     left: 0;
     right: 0;
-    height: 10vh;
+    height: 8%;
+    min-height: 50px;
+    background-color: pink;
+    transition: top 0.15s;
+    transition-timing-function: ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.is-active{
+      top: 0;
+    }
+
+    input {
+      width: 80%;
+      font-size: 1.6rem;
+      padding: 5px;
+      border-radius: 4px;
+    }
   }
 }

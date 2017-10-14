@@ -181,7 +181,7 @@ gulp.task('serve:dist', ['deploy'], () =>
 gulp.task('deploy', ['clean'], cb =>
   runSequence(
     'styles',
-    ['html', 'scripts' 'images', 'copy'],
+    ['html', 'scripts', 'images', 'copy'],
     'generate-service-worker',
     cb
   )
