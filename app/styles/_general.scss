@@ -9,28 +9,33 @@
 }
 header {
   display: flex;
-  height: 8%;
+  height: $headerHeight;
   min-height: 50px;
-  background-color: green;
+  background-color: $salmon;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 
   button.search {
     @include normalizeButton();
     width: 35px;
     height: 35px;
     margin: 0 10px;
-    background-color: Orange;
+  }
+
+  button.menu {
+    @include normalizeButton();
+    background-color: $light-salmon;
+    height: 100%;
   }
 }
 
 main {
   position: relative;
   display: flex;
-  height: 90%;
+  height: 100% - $headerHeight;
   background-color: red;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
 
   nav {
     width: 60%;
