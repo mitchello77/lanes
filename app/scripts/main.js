@@ -1,3 +1,5 @@
+var objCurrentScreen = $("#login");
+
 $(function() {
   // We Ready Boiis
   FastClick.attach(document.body);
@@ -15,13 +17,38 @@ $(function() {
 
   });
 
-  $(".btn.menu").click(function(){
+  $(".btn").click(function(){
+    var _currentScreen = $(this).closest('.screen');
+    var nextScreenid = $(this).data('gotoscreen');
+    if (nextScreenid !== undefined && nextScreenid !== "") {
+      if (_currentScreen.attr('id') != nextScreenid) {
+        gotoScreen(nextScreenid);
+      }
+    } else {
+      console.log($(this) + " Missing data-gotoscreen");
+    }
+  });
+
+  $("nav li").click(function(){
+    toggleMenu($(this).closest('.screen').attr('id'));
+  });
+
+  $("button.menu").click(function(){
     toggleMenu($(this).parent().parent().attr('id'));
   })
 
-  $(".btn.search").click(function(){
+  $("button.search").click(function(){
     toggleSearch($(this).parent().parent().attr('id'));
   })
+
+  $('#login form').submit(function(e){
+    e.preventDefault();
+    var email = document.querySelector('#username');
+    var pass = document.querySelector('#password');
+    if (email.validity.valid && pass.validity.valid) {
+      gotoScreen("#dashboard");
+    }
+  });
 
   });
 
@@ -38,10 +65,26 @@ function toggleMenu(screenId) {
 function toggleSearch(screenId) {
   var btn = $("#" + screenId + " .btn.search");
   var search = $("#" + screenId + " main .search");
+  if (search.hasClass('is-active')) {
+    search.find('input').blur();
+  } else {
+    search.find('input').focus();
+  }
   btn.toggleClass("is-active");
   search.toggleClass("is-active");
   if ($("#" + screenId + " main nav").hasClass("is-active")) {
     $("#" + screenId + " main nav").removeClass("is-active");
     $("#" + screenId + " .btn.menu").removeClass("is-active");
+  }
+}
+
+function gotoScreen(id) {
+  var newScreen = $(id);
+  if (newScreen.length > 0) {
+      objCurrentScreen.addClass('hidden');
+      objCurrentScreen = $(id);
+      objCurrentScreen.removeClass('hidden');
+  } else {
+    console.log("ID: " + id + " is not a valid screen.");
   }
 }

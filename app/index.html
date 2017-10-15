@@ -37,34 +37,36 @@
 </head>
 <body>
   <div class="screen" id="intro">
-    <h1>Welcome to Lanes</h1>
-    <div class="subheading">
-      A prototype of ...
-    </div>
-    <div class="">
-      Touch to begin
-    </div>
+    <main>
+      <div class="logo"></div>
+      <h1>Welcome to Lanes</h1>
+      <div class="subheading">
+        A prototype shopping application to fast track your shopping experience.
+      </div>
+      <button class="btn begin" type="button" name="button" data-gotoscreen="#dashboard">Let's Begin &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i>
+</button>
+    </main>
   </div>
 
-  <div class="screen" id="login">
+  <div class="screen hidden" id="login">
     <main>
       <div class="branding">
         <div class="logo"></div>
         <h2>Lanes</h2>
       </div>
-      <form class="">
+      <form>
         <div class="inputGroup">
-          <label for="">Username</label>
-          <input type="text" name="" value="">
+          <label for="username">Username</label>
+          <input id="username" type="text" name="username" value="" required>
         </div>
         <div class="inputGroup">
-          <label for="">Password</label>
-          <input type="text" name="" value="">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" value="" required>
         </div>
-        <button class="login" type="button" name="button">Get Started</button>
+        <button class="login" type="submit" name="submit">Get Started</button>
       </form>
-      <button class="social facebook" type="button" name="button">Login with Facebook</button>
-      <button class="social google" type="button" name="button">Sign in with Google</button>
+      <button class="btn social facebook" data-gotoscreen="#dashboard" type="button" name="button">Login with Facebook</button>
+      <button class="btn social google" data-gotoscreen="#dashboard" type="button" name="button">Sign in with Google</button>
     </main>
     <footer>
       <a data-gotoscreen="#createaccount">Create Account</a>
@@ -73,30 +75,32 @@
   </div>
 
 
-  <div class="screen hidden" id="dashboard">
+  <div class="screen hidden" id="dashboard" data-swiperighttoscreen="#shops">
     <header>
-      <button type="button" name="toggleMenu" class="btn menu hamburger">
+      <button type="button" name="toggleMenu" class="menu hamburger">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <h2>Dashboard</h2>
-      <button type="button" name="search" class="btn search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
+      <h2><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</h2>
+      <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
     </header>
     <main>
       <nav>
         <ul>
-          <li>Dashboard</li>
-          <li>Shops</li>
-          <li>Deals</li>
-          <li>Trails</li>
-          <li>Profile</li>
+          <li class="btn active" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+          <li class="btn" data-gotoscreen="#shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shops</li>
+          <li class="btn" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
+          <li class="btn" data-gotoscreen="#trails"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</li>
+          <li class="btn" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
         </ul>
       </nav>
       <div class="search">
-        <input type="text" name="" value=""><i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
       </div>
-
+      <div class="">
+        Stuff
+      </div>
     </main>
   </div>
 
