@@ -6,6 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="images/icons/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="images/icons/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/icons/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16.png">
+	<link rel="apple-touch-icon" href="images/icons/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/icons/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#eb6a78">
+	<meta name="msapplication-TileImage" content="images/icons/favicon-144.png">
+	<meta name="msapplication-config" content="browserconfig.xml">
 
   <!-- GENERIC STYLES -->
   <link rel="stylesheet" href="styles/main.css">
@@ -27,7 +47,7 @@
   </div>
 
   <div class="screen" id="login">
-    <main class="fullMain">
+    <main>
       <div class="branding">
         <div class="logo"></div>
         <h2>Lanes</h2>
@@ -45,11 +65,11 @@
       </form>
       <button class="social facebook" type="button" name="button">Login with Facebook</button>
       <button class="social google" type="button" name="button">Sign in with Google</button>
-      <footer>
-        <a href="#">Create Account</a>
-        <a href="#">Forgot Password</a>
-      </footer>
     </main>
+    <footer>
+      <a data-gotoscreen="#createaccount">Create Account</a>
+      <a data-gotoscreen="#forgotpassword">Forgot Password?</a>
+    </footer>
   </div>
 
 
@@ -60,7 +80,7 @@
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <h2>Screen Title</h2>
+      <h2>Dashboard</h2>
       <button type="button" name="search" class="btn search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
     </header>
     <main>

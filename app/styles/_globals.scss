@@ -17,6 +17,7 @@ body {
   font-family: 'Graphik', sans-serif;
   overflow: hidden;
   display: block;
+  background-color: $light-aqua;
 }
 
 p {
@@ -27,6 +28,7 @@ p {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,4 +44,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 button {
   @include normalizeButton();
+}
+
+.scrollable {
+  overflow: auto;
 }
