@@ -38,6 +38,13 @@ gulp.task('images', () =>
     .pipe($.size({title: 'images'}))
 );
 
+// Handle Fonts
+gulp.task('fonts', () =>
+  gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe($.size({title: 'fonts'}))
+);
+
 // Copy all files at the root level (app)
 gulp.task('copy', () =>
   gulp.src([
@@ -181,7 +188,7 @@ gulp.task('serve:dist', ['deploy'], () =>
 gulp.task('deploy', ['clean'], cb =>
   runSequence(
     'styles',
-    ['html', 'scripts', 'images', 'copy'],
+    ['html', 'scripts', 'images', 'copy', 'fonts'],
     'generate-service-worker',
     cb
   )

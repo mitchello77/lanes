@@ -16,7 +16,7 @@ $hamburger-layer-width                     : 35px;
 $hamburger-layer-height                    : 4px;
 $hamburger-layer-spacing                   : 6px;
 $hamburger-layer-color                     : #fff;
-$hamburger-layer-border-radius             : 4px;
+$hamburger-layer-border-radius             : 2px;
 
 // ==================================================
 // Hamburger
@@ -71,7 +71,7 @@ $hamburger-layer-border-radius             : 4px;
 /*
    * Arrow
    */
-  .hamburger--arrow.is-active {
+  .hamburger.is-active {
     .hamburger-inner {
       &::before {
         transform: translate3d($hamburger-layer-width * -0.2, 0, 0) rotate(-45deg) scale(0.7, 1);

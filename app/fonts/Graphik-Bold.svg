@@ -2,14 +2,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20161013 at Sat Oct 14 16:40:28 2017
+Created by FontForge 20161013 at Wed Oct 14 11:53:17 2009
  By ,,,
 (c)2009 Commercial Type.
 </metadata>
 <defs>
-<font id="Cheeky-Bold" horiz-adv-x="600" >
+<font id="Graphik-Bold" horiz-adv-x="600" >
   <font-face 
-    font-family="Cheeky Bold"
+    font-family="Graphik Bold"
     font-weight="700"
     font-stretch="normal"
     units-per-em="1000"
@@ -1032,14 +1032,14 @@ d="M521 59l-442 246v34l442 246v-162l-204 -100l204 -106v-158z" />
     <glyph glyph-name="greater.tab" 
 d="M80 60v163l204 99l-204 106v158l441 -246v-34z" />
     <glyph glyph-name="florin.tab" 
-d="M87 293v121h103l18 125q27 186 221 186q39 0 78 -11v-134q-25 7 -51 7q-61 0 -72 -63l-16 -110h124v-121h-141l-67 -475h-178l67 475h-86z" />
+d="M87 293v121h103l18 125q27 186 221 186q39 0 78 -11v-134q-24 7 -51 7q-61 0 -72 -63l-16 -110h124v-121h-141l-67 -475h-178l67 475h-86z" />
     <glyph glyph-name="plusminus.tab" 
 d="M228 176v165h-175v131h175v164h144v-164h176v-131h-176v-165h-144zM53 0v118h497v-118h-497z" />
     <glyph glyph-name="notequal.tab" 
 d="M60 363v123h244l38 96h115l-37 -96h120v-123h-168l-28 -74h196v-122h-243l-37 -96h-116l37 96h-121v122h168l29 74h-197z" />
     <glyph glyph-name="approxequal.tab" 
-d="M51 121q5 89 44 133.5t96 44.5q45 0 117 -20t93 -20q39 0 45 44h103q-3 -85 -42.5 -131.5t-95.5 -46.5q-46 0 -118.5 20t-93.5 20q-39 0 -45 -44h-103zM51 342q5 89 44 133t96 44q45 0 117 -20t93 -20q39 0 45 44h103q-3 -85 -42.5 -131t-95.5 -46q-46 0 -118.5 20
-t-93.5 20q-38 0 -45 -44h-103z" />
+d="M51 121q5 89 44 133.5t96 44.5q44 0 116.5 -20t93.5 -20q39 0 45 44h103q-3 -85 -42.5 -131.5t-95.5 -46.5q-46 0 -118.5 20t-93.5 20q-39 0 -45 -44h-103zM51 342q5 89 44 133t96 44q44 0 116.5 -20t93.5 -20q39 0 45 44h103q-3 -85 -42.5 -131t-95.5 -46
+q-46 0 -118.5 20t-93.5 20q-38 0 -45 -44h-103z" />
     <glyph glyph-name="lessequal.tab" 
 d="M507 143l-421 225v34l421 226v-160l-166 -82l166 -82v-161zM86 0v118h421v-118h-421z" />
     <glyph glyph-name="greaterequal.tab" 
