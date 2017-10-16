@@ -12,6 +12,12 @@ $(function() {
     )
   );
 
+  $('.tabs').each(function (index, element){
+    var sections = $(this).find('.sections');
+    sections.find('section').addClass('hidden');
+    sections.find('section:first-of-type').removeClass('hidden');
+  });
+
   // since were not using <a> tags
   $("a").click(function(){
     if ($(this).attr('href') === undefined) {
@@ -62,16 +68,24 @@ $(function() {
     }
   });
 
-  /* $('#login form').submit(function(e){
-    e.preventDefault();
-    var email = document.querySelector('#username');
-    var pass = document.querySelector('#password');
-    if (email.validity.valid && pass.validity.valid) {
-      gotoScreen("#dashboard");
+  $('.tabs .nav li').click(function (){
+    var target = $(this).attr('for');
+    if ($(this).closest('.tabs').find('.sections ' + target).length > 0) {
+      var objTarget = $(this).closest('.tabs').find('.sections ' + target);
+      var objCurrent = $(this).closest('.tabs').find('.sections section:not(.hidden)');
+      if (('#'+objCurrent.attr('id')) != target) {
+        $(this).closest('.tabs').find('.nav li').removeClass('active');
+        $(this).addClass('active');
+        $('.tabs .sections section').addClass('hidden');
+        objTarget.removeClass('hidden');
+      }
+    } else {
+      console.log($(this));
+      console.log($(this).attr('for') + ' is invalid in the above element.');
     }
-  }); */
-
   });
+
+});
 
 function toggleMenu(screenId) {
   var btn = $("#" + screenId + " .btn.menu");

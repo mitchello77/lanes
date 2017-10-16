@@ -47,6 +47,50 @@
     background-color: $light-aqua;
     flex-direction: column;
 
+    .tabs {
+      width: 100%;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      .nav {
+        width: 100%;
+        background-color: #fff;
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            width: auto;
+            flex-grow: 1;
+            text-align: center;
+            font-size: 2rem;
+            padding: 15px 0;
+            cursor: pointer;
+            &.active {
+              background-color: $light-aqua;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .sections {
+        flex-grow: 1;
+        position: relative;
+        section {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: $light-aqua;
+          overflow-y: auto;
+        }
+      }
+    }
+
     nav {
       width: 50%;
       background: $light-salmon;
@@ -56,6 +100,7 @@
       left: -50%;
       transition: left 0.15s;
       transition-timing-function: ease-out;
+      z-index: 20;
       &.is-active{
         left: 0;
       }
@@ -103,6 +148,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 5;
       &.is-active{
         top: 0;
       }
@@ -289,6 +335,24 @@
     a {
       color: #6f6f6f;
       font-size: 1.4rem;
+    }
+  }
+}
+
+#profile {
+  .tabs {
+    li {
+      .icon-profiletrails {
+        background: url("../images/profile-trails_icon-black.svg") no-repeat;
+        background-size: contain;
+        height: 2.3rem;
+        width: 2rem;
+        display: block;
+        margin: 0 auto;
+      }
+      &.active .icon-profiletrails {
+        background: url("../images/profile-trails_icon-white.svg");
+      }
     }
   }
 }

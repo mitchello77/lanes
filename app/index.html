@@ -206,14 +206,14 @@
     </main>
   </div>
 
-  <div class="screen hidden" id="trails" data-swiperighttoscreen="#profile" data-swipelefttoscreen="#shops">
+  <div class="screen hidden" id="lanes" data-swiperighttoscreen="#profile" data-swipelefttoscreen="#shops">
     <header>
       <button type="button" name="toggleMenu" class="menu hamburger">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <h2><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</h2>
+      <h2><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Lanes</h2>
       <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
     </header>
     <main>
@@ -236,7 +236,7 @@
     </main>
   </div>
 
-  <div class="screen hidden" id="profile" data-swipelefttoscreen="#deals">
+  <div class="screen" id="profile" data-swipelefttoscreen="#deals">
     <header>
       <button type="button" name="toggleMenu" class="menu hamburger">
         <span class="hamburger-box">
@@ -260,8 +260,29 @@
       <div class="search">
         <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
       </div>
-      <div class="">
-        Stuff
+      <div class="tabs">
+        <div class="nav">
+          <ul>
+            <li class="active" for="#profile-stores"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+            <li for="#profile-trails"><span class="icon-profiletrails"></span></li>
+            <li for="#profile-stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></li>
+            <li for="#profile-settings"><i class="fa fa-cog" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <div class="sections">
+          <section id="profile-stores">
+            <div>Stores yo</div>
+          </section>
+          <section id="profile-trails">
+            <div>Trails</div>
+          </section>
+          <section id="profile-stats">
+            <div>stats</div>
+          </section>
+          <section id="profile-settings">
+            <div>settings</div>
+          </section>
+        </div>
       </div>
     </main>
   </div>
