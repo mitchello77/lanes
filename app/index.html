@@ -43,8 +43,7 @@
       <div class="subheading">
         A prototype shopping application to fast track your shopping experience.
       </div>
-      <button class="btn begin" type="button" name="button" data-gotoscreen="#login">Let's Begin &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i>
-</button>
+      <button class="btn begin" type="button" name="button" data-gotoscreen="#login">Let's Begin &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
     </main>
   </div>
 
@@ -63,7 +62,7 @@
           <label for="password">Password</label>
           <input id="password" type="password" name="password" value="" required>
         </div>
-        <button class="login" type="submit" name="submit">Get Started</button>
+        <button data-gotoscreen="#dashboard" class="login" type="submit" name="submit">Get Started</button>
       </form>
       <button class="btn social facebook" data-gotoscreen="#dashboard" type="button" name="button">Login with Facebook</button>
       <button class="btn social google" data-gotoscreen="#dashboard" type="button" name="button">Sign in with Google</button>
@@ -76,7 +75,7 @@
 
   <div class="screen hidden" id="createaccount">
     <main>
-      <div class="back"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+      <button data-gotoscreen="#login" class="btn back" type="button" name="back"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
       <div class="branding">
         <div class="logo"></div>
         <h2>Lanes</h2>
@@ -94,14 +93,14 @@
           <label for="confirm-addpassword">Confirm Password</label>
           <input id="confirm-addpassword" type="password" name="password" value="" required>
         </div>
-        <button class="login" type="submit" name="submit">Sign Up</button>
+        <button data-gotoscreen="#login" class="login" type="submit" name="submit">Sign Up</button>
       </form>
     </main>
   </div>
 
   <div class="screen hidden" id="forgotpassword">
     <main>
-      <div class="back"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+      <button data-gotoscreen="#login" class="btn back" type="button" name="back"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
       <div class="branding">
         <div class="logo"></div>
         <h2>Lanes</h2>
@@ -111,7 +110,7 @@
           <label for="forgot-username">Username</label>
           <input id="forgot-username" type="text" name="username" value="" required>
         </div>
-        <button class="login" type="submit" name="submit">Restore</button>
+        <button data-gotoscreen="#login" class="btn login" type="submit" name="submit">Restore</button>
       </form>
     </main>
   </div>
@@ -135,6 +134,37 @@
           <li class="btn" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
           <li class="btn" data-gotoscreen="#trails"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</li>
           <li class="btn" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+          <li class="btn" data-gotoscreen="#login"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="">
+        Stuff
+      </div>
+    </main>
+  </div>
+
+  <div class="screen hidden" id="shops" data-swiperighttoscreen="#deals" data-swipelefttoscreen="#dashboard">
+    <header>
+      <button type="button" name="toggleMenu" class="menu hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h2><i class="fa fa-tachometer" aria-hidden="true"></i>Shops</h2>
+      <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+          <li class="btn active" data-gotoscreen="#shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shops</li>
+          <li class="btn" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
+          <li class="btn" data-gotoscreen="#trails"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</li>
+          <li class="btn" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+          <li class="btn" data-gotoscreen="#login"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
         </ul>
       </nav>
       <div class="search">

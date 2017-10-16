@@ -54,3 +54,11 @@ button {
   background: url("../images/logo_pink.svg");
   background-size: cover;
 }
+
+button.back {
+  font-size: 3rem;
+  top: 1%;
+  left: 2%;
+  color: #fff;
+  position: absolute;
+}

@@ -14,10 +14,17 @@ $(function() {
 
   // since were not using <a> tags
   $("a").click(function(){
-
+    if ($(this).attr('href') === undefined) {
+      if ($(this).data('gotoscreen') !== undefined && $(this).data('gotoscreen') !== "") {
+        gotoScreen($(this).data('gotoscreen'));
+      }
+    }
   });
 
   $(".btn").click(function(){
+    if ($(this).attr('type') === 'submit') {
+      return;
+    }
     var _currentScreen = $(this).closest('.screen');
     var nextScreenid = $(this).data('gotoscreen');
     if (nextScreenid !== undefined && nextScreenid !== "") {
@@ -25,7 +32,8 @@ $(function() {
         gotoScreen(nextScreenid);
       }
     } else {
-      console.log($(this) + " Missing data-gotoscreen");
+      console.log($(this));
+      console.log("Missing data-gotoscreen");
     }
   });
 
@@ -41,14 +49,27 @@ $(function() {
     toggleSearch($(this).parent().parent().attr('id'));
   })
 
-  $('#login form').submit(function(e){
+  $("form").submit(function(e){
+    e.preventDefault();
+    var nextScreenid = $(this).find(':submit').data('gotoscreen');
+    if (nextScreenid !== undefined && nextScreenid !== "") {
+      if (objCurrentScreen.attr('id') != nextScreenid) {
+        gotoScreen(nextScreenid);
+      }
+    } else {
+      console.log($(this).find(':submit'));
+      console.log("Missing data-gotoscreen");
+    }
+  });
+
+  /* $('#login form').submit(function(e){
     e.preventDefault();
     var email = document.querySelector('#username');
     var pass = document.querySelector('#password');
     if (email.validity.valid && pass.validity.valid) {
       gotoScreen("#dashboard");
     }
-  });
+  }); */
 
   });
 
