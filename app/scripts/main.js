@@ -1,4 +1,4 @@
-var objCurrentScreen = $("#login");
+var objCurrentScreen = $("#intro");
 
 $(function() {
   // We Ready Boiis
