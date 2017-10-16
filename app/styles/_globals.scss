@@ -15,6 +15,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   font-weight: 400;
   font-family: 'Graphik', sans-serif;
+  letter-spacing: 1px;
   overflow: hidden;
   display: block;
   background-color: $light-aqua;
@@ -62,4 +63,27 @@ button.back {
   left: 2%;
   color: #fff;
   position: absolute;
+}
+
+input {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Graphik';
+    font-weight: normal;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Graphik';
+    font-weight: normal;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Graphik';
+    font-weight: normal;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Graphik';
+    font-weight: normal;
+  }
 }
