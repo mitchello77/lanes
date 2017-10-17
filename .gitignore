@@ -1,6 +1,7 @@
 dist/
 .tmp
 app.yaml
+package-lock.json
 
 
 # Created by https://www.gitignore.io/api/node,macos,windows
