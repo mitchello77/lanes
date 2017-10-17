@@ -123,7 +123,7 @@
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <h2><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</h2>
+      <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>Dashboard</h2>
       <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
     </header>
     <main>
@@ -211,6 +211,118 @@
       </div>
     </main>
   </div>
+
+  <div class="screen hidden" id="deals" data-swiperighttoscreen="#profile" data-swipelefttoscreen="#shops">
+    <header>
+      <button type="button" name="toggleMenu" class="menu hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h2><i class="fa fa-tags" aria-hidden="true"></i>Deaks</h2>
+      <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+          <li class="btn" data-gotoscreen="#shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shops</li>
+          <li class="btn active" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
+          <li class="btn" data-gotoscreen="#trails"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</li>
+          <li class="btn" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+          <li class="btn" data-gotoscreen="#login"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="">
+        Stuff
+      </div>
+    </main>
+  </div>
+
+  <div class="screen hidden" id="lanes" data-swiperighttoscreen="#profile" data-swipelefttoscreen="#shops">
+    <header>
+      <button type="button" name="toggleMenu" class="menu hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h2><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Lanes</h2>
+      <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+          <li class="btn" data-gotoscreen="#shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shops</li>
+          <li class="btn active" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
+          <li class="btn" data-gotoscreen="#trails"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</li>
+          <li class="btn" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+          <li class="btn" data-gotoscreen="#login"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="">
+        Stuff
+      </div>
+    </main>
+  </div>
+
+  <div class="screen" id="profile" data-swipelefttoscreen="#deals">
+    <header>
+      <button type="button" name="toggleMenu" class="menu hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h2><i class="fa fa-user" aria-hidden="true"></i>Profile</h2>
+      <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+          <li class="btn" data-gotoscreen="#shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shops</li>
+          <li class="btn" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
+          <li class="btn" data-gotoscreen="#trails"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Trails</li>
+          <li class="btn active" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+          <li class="btn" data-gotoscreen="#login"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="tabs">
+        <div class="nav">
+          <ul>
+            <li class="active" for="#profile-stores"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+            <li for="#profile-trails"><span class="icon-profiletrails"></span></li>
+            <li for="#profile-stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></li>
+            <li for="#profile-settings"><i class="fa fa-cog" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <div class="sections">
+          <section id="profile-stores">
+            <div>Stores yo</div>
+          </section>
+          <section id="profile-trails">
+            <div>Trails</div>
+          </section>
+          <section id="profile-stats">
+            <div>stats</div>
+          </section>
+          <section id="profile-settings">
+            <div>settings</div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
