@@ -454,3 +454,40 @@
       box-sizing: border-box;
     }
   }
+
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex: 1;
+    height: 22rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1rem;
+    box-shadow: 0px 2px 6px rgba(85, 85, 85, 0.3);
+    position: relative;
+    min-width: 40%;
+    justify-content: space-around;
+    align-items: center;
+
+    hr {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid rgba($grey, 0.2)
+    }
+
+    i {
+      color: rgba($salmon, 0.7);
+      font-size: 2.5rem;
+    }
+  }
+
+  .floating-heading {
+    color: #fff;
+  }
