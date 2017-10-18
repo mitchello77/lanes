@@ -374,50 +374,75 @@
   padding: 1rem;
   box-shadow: 0px 2px 6px rgba(85, 85, 85, 0.3);
   position: relative;
+}
 
-  .information {
-    flex-direction: column;
-    padding: 1rem 0.5rem;
-    width: 100%;
-    flex: 1;
+.information {
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  flex: 1;
 
-    p {
-      line-height: 1;
-    }
+  p {
+    line-height: 1;
   }
 
-  .information-item {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.7rem 0;
-    border-bottom: 1px solid rgba($grey, 0.15);
-    padding-bottom: 0.5rem;
+  &.stretch {
+    flex: 2;
+    height: 100%;
+    padding: 0;
+  }
+}
 
-    &:last-of-type {
-      border-bottom: 0;
-    }
+.information-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.7rem 0;
+  border-bottom: 1px solid rgba($grey, 0.15);
+  padding-bottom: 0.5rem;
 
-    i {
-      color: rgba($grey, 0.4);
-    }
+  &:last-of-type {
+    border-bottom: 0;
   }
 
-  .badge {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background: rgba($green, 0.8);
-    position: absolute;
-    right: -1rem;
-    top: -1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 6px rgba(85, 85, 85, 0.3);
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
+  i {
+    color: rgba($grey, 0.4);
   }
+}
+
+.badge {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba($green, 0.8);
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(85, 85, 85, 0.3);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.profile-image {
+  height: 100%;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nissa {
+  background-image: url('../images/nissa.jpg');
+}
+
+.block-heading {
+  background: $cherry;
+  padding: 1rem;
+  color: #fff;
+  width: 100%;
 }
 
 
@@ -459,6 +484,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 1rem;
   }
 
   .card {
@@ -482,9 +508,14 @@
       border-bottom: 1px solid rgba($grey, 0.2)
     }
 
-    i {
+    .icon {
       color: rgba($salmon, 0.7);
       font-size: 2.5rem;
+    }
+
+    &.large {
+      flex-direction: row;
+      flex: 1 100%;
     }
   }
 
