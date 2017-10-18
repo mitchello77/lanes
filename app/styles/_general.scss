@@ -438,11 +438,25 @@
   background-image: url('../images/nissa.jpg');
 }
 
+.lincoln {
+  background-image: url('../images/lincoln.jpg');
+}
+
+.sam {
+  background-image: url('../images/sam.jpg');
+}
+
+.adam {
+  background-image: url('../images/adam.jpg');
+}
+
 .block-heading {
   background: $cherry;
   padding: 1rem;
   color: #fff;
   width: 100%;
+  font-weight: bold;
+  text-align: center;
 }
 
 
@@ -477,6 +491,12 @@
       background-size: contain;
       background-repeat: no-repeat;
       box-sizing: border-box;
+    }
+  }
+
+  #profile-trails {
+    .information-item {
+      padding: 0.5rem 1rem;
     }
   }
 
