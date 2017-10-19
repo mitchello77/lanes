@@ -41,10 +41,13 @@
       <div class="logo"></div>
       <h1>Welcome to Lanes</h1>
       <div class="subheading">
-        A prototype shopping application to fast track your shopping experience.
+        A prototype shopping application that aims to fast track your shopping experience.
       </div>
       <button class="btn begin" type="button" name="button" data-gotoscreen="#login">Let's Begin &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
     </main>
+    <footer>
+      <a href="https://github.com/mitchello77/lanes"><i class="fa fa-github" aria-hidden="true"></i> Source Code</a>
+    </footer>
   </div>
 
   <div class="screen hidden" id="login">
@@ -156,7 +159,7 @@
       <h2><i class="fa fa-tachometer" aria-hidden="true"></i>Shops</h2>
       <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
     </header>
-    <main>
+    <main class="scrollable">
       <nav>
         <ul>
           <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
@@ -169,6 +172,17 @@
       </nav>
       <div class="search">
         <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="overlay hidden">
+        <div class="element">
+          <div class="message">
+            Do you want to save this lane?
+          </div>
+          <div class="nav">
+            <button type="button" name="button" onclick="$(this).closest('.overlay').addClass('hidden');"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+            <button type="button" name="button" onclick="$(this).closest('.overlay').addClass('hidden');"><i class="fa fa-check fa-2x" aria-hidden="true"></i></button>
+          </div>
+        </div>
       </div>
       <div class="shop-card-container">
         <div class="shop-card">
@@ -313,7 +327,7 @@
       <h2><i class="fa fa-tags" aria-hidden="true"></i>Deals</h2>
       <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
     </header>
-    <main>
+    <main class="scrollable">
       <nav>
         <ul>
           <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>

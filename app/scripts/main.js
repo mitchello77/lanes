@@ -12,6 +12,12 @@ $(function() {
     )
   );
 
+  $("main").click(function(){
+    if ($(this).find('nav').hasClass('is-active')) {
+      $(this).find('nav').removeClass('is-active');
+    }
+  });
+
   $('.tabs').each(function (index, element){
     var sections = $(this).find('.sections');
     sections.find('section').addClass('hidden');
@@ -54,6 +60,10 @@ $(function() {
   $("button.search").click(function(){
     toggleSearch($(this).parent().parent().attr('id'));
   })
+
+  $('#shops .shop-card').click(function(){
+    $('#shops main .overlay').removeClass('hidden');
+  });
 
   $("form").submit(function(e){
     e.preventDefault();
