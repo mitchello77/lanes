@@ -460,6 +460,10 @@
     text-align: center;
     padding: 2rem;
   }
+
+  &.padding {
+    padding: 0.5rem;
+  }
 }
 
 .badge {
@@ -525,6 +529,14 @@
 
 .burrito {
   background-image: url('../images/burrito.jpg');
+}
+
+.samthaiday {
+  background-image: url('../images/samthaiday.png');
+}
+
+.keithurban {
+  background-image: url('../images/keith.png');
 }
 
 .block-heading {
@@ -673,6 +685,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   .settings-item {
@@ -697,8 +710,111 @@
     align-self: center;
   }
 
-  // deals
+.floating-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: rgba($grey, 0.7);
+}
 
-  .factorie-tee {
-    background-image: url('../images/tee.jpg');
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+// dashboard
+
+.panel-contaier {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.panel {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 20rem;
+  background: red;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba($grey, 0.6);
   }
+
+  &.large {
+    flex: 2;
+    height: 25rem;
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 4rem;
+  }
+}
+
+.food {
+  background-image: url('../images/burgers.jpg');
+}
+
+.clothing {
+  background-image: url('../images/jeans.jpg');
+}
+
+.tech {
+  background-image: url('../images/tech.jpg');
+}
+
+.lanes-button {
+  width: 90%;
+  padding: 2rem;
+  color: #fff;
+  background: $green;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba($grey, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+
+  .add {
+    height: 100%;
+    width: 4rem;
+    background-color: $green;
+    border-radius: 0.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
