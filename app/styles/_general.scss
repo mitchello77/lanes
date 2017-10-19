@@ -407,6 +407,14 @@
   i {
     color: rgba($grey, 0.4);
   }
+
+  &.large {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 2rem;
+  }
 }
 
 .badge {
@@ -448,6 +456,30 @@
 
 .adam {
   background-image: url('../images/adam.jpg');
+}
+
+.factorie-tee {
+  background-image: url('../images/tee.jpg');
+}
+
+.factorie-s-shirt {
+  background-image: url('../images/s-shirt.jpeg');
+}
+
+.bowling {
+  background-image: url('../images/bowling.jpeg');
+}
+
+.haircut {
+  background-image: url('../images/haircut.png');
+}
+
+.burger {
+  background-image: url('../images/burger.jpeg');
+}
+
+.burrito {
+  background-image: url('../images/burrito.jpg');
 }
 
 .block-heading {
@@ -573,4 +605,10 @@
     position: relative;
     margin: 1rem auto;
     align-self: center;
+  }
+
+  // deals
+
+  .factorie-tee {
+    background-image: url('../images/tee.jpg');
   }
