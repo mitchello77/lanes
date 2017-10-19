@@ -398,7 +398,7 @@
     </main>
   </div>
 
-  <div class="screen hidden" id="lanes" data-swiperighttoscreen="#profile" data-swipelefttoscreen="#shops">
+  <div class="screen" id="lanes" data-swiperighttoscreen="#profile" data-swipelefttoscreen="#shops">
     <header>
       <button type="button" name="toggleMenu" class="menu hamburger">
         <span class="hamburger-box">
@@ -422,10 +422,25 @@
       <div class="search">
         <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
       </div>
-      <div class="">
-        Stuff
+      <div class="tabs">
+        <div class="nav">
+          <ul>
+            <li class="active" for="#lanes-map"><i class="fa fa-map-o" aria-hidden="true"></i></li>
+            <li for="#lanes-camera"><i class="fa fa-camera" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <div class="sections">
+          <section id="lanes-map">
+          </section>
+          <section id="lanes-camera">
+          </section>
+        </div>
       </div>
     </main>
+    <footer>
+      <div class="profile"><div class="img"></div></div>
+      <div class="name">Mitch's Lane</div>
+    </footer>
   </div>
 
   <div class="screen hidden" id="profile" data-swipelefttoscreen="#deals">
