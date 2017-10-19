@@ -61,9 +61,9 @@ $(function() {
     toggleSearch($(this).parent().parent().attr('id'));
   })
 
-  $('#shops .shop-card').click(function(){
+  /* $('#shops .shop-card').click(function(){
     $('#shops main .overlay').removeClass('hidden');
-  });
+  }); */
 
   $("form").submit(function(e){
     e.preventDefault();
