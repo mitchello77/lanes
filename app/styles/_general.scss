@@ -482,6 +482,14 @@
   background-image: url('../images/burrito.jpg');
 }
 
+.samthaiday {
+  background-image: url('../images/samthaiday.png');
+}
+
+.keithurban {
+  background-image: url('../images/keith.png');
+}
+
 .block-heading {
   background: $cherry;
   padding: 1rem;
@@ -583,6 +591,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   .settings-item {
@@ -607,8 +616,18 @@
     align-self: center;
   }
 
-  // deals
+.floating-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: rgba($grey, 0.7);
+}
 
-  .factorie-tee {
-    background-image: url('../images/tee.jpg');
-  }
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+}
