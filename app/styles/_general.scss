@@ -819,3 +819,43 @@
 
   }
 }
+
+.purchase-history {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem auto;
+
+  .heading {
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: $cherry;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .information {
+    padding: 2rem;
+  }
+
+  .date {
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .price {
+    color: $green;
+  }
+}
