@@ -140,10 +140,23 @@
       <div class="search">
         <input type="text" name="" value="" placeholder="Search for shops, deals and more..." autofocus><i class="fa fa-chevron-right" aria-hidden="true"></i>
       </div>
-      <div class="card-container">
-        <div class="panel large food"></div>
-        <div class="panel clothing"></div>
-        <div class="panel tech"></div>
+      <div class="btn panel-container">
+        <div class="header"></div>
+        <div class="floating-label">
+          Latest Lanes
+        </div>
+        <div data-gotoscreen="#lanes" class="btn panel large food">
+          <h1>Food</h1>
+        </div>
+        <div>
+          <div data-gotoscreen="#lanes" class="btn panel clothing">
+            <h1>Clothing</h1>
+          </div>
+          <div data-gotoscreen="#lanes" class="panel tech">
+            <h1>Tech</h1>
+          </div>
+        </div>
+        <div class="lanes-button btn">Create new lane</div>
       </div>
     </main>
   </div>
@@ -502,7 +515,7 @@
             </div>
           </section>
           <section id="profile-trails">
-            <div class="title">Trails</div>
+            <div class="title">Lanes</div>
             <div class="card-container">
               <div class="floating-label">Celebrities</div>
               <div class="card large">
