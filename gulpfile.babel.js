@@ -189,7 +189,6 @@ gulp.task('deploy', ['clean'], cb =>
   runSequence(
     'styles',
     ['html', 'scripts', 'images', 'copy', 'fonts'],
-    'generate-service-worker',
     cb
   )
 );
