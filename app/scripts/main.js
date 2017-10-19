@@ -12,11 +12,15 @@ $(function() {
     )
   );
 
+
+
   $("main").click(function(){
     if ($(this).find('nav').hasClass('is-active')) {
       $(this).find('nav').removeClass('is-active');
     }
   });
+
+  $('.begin').makeItRain();
 
   $('.tabs').each(function (index, element){
     var sections = $(this).find('.sections');
@@ -94,6 +98,9 @@ $(function() {
       console.log($(this).attr('for') + ' is invalid in the above element.');
     }
   });
+
+  var music = document.getElementById("music");
+  music.play();
 
 });
 
