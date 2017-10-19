@@ -591,19 +591,19 @@
                   </div>
                 </div>
               </div>
-              <div class="purchase-history">
-                <div class="heading">
-                  Recent purchases
+              <div class="shop-card btn" data-gotoscreen="#shop-details">
+                <div class="badge">78%</div>
+                <div class="shop-logo factorie">
+                  <img src="../images/factorie.jpeg" alt="">
                 </div>
                 <div class="information">
-                  <div class="date">
-                    13/10/2017
+                  <div class="information-item">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <p>Clothing</p>
                   </div>
-                  <hr>
-                  <div class="row">
-                    <p class="store">Universal</p>
-                    <p class="item">Abrand Jeans</p>
-                    <p class="price">$89.99</p>
+                  <div class="information-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>9am - 5pm</p>
                   </div>
                 </div>
               </div>
@@ -749,6 +749,89 @@
       </div>
     </main>
   </div>
+
+  <div class="screen hidden" id="shop-details">
+    <header>
+      <button type="button" name="toggleMenu" class="menu hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h2><i class="fa fa-user" aria-hidden="true"></i>Factorie</h2>
+      <button type="button" name="search" class="search"><i class="fa fa-search fw fa-lg" aria-hidden="true"></i></button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="btn" data-gotoscreen="#dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+          <li class="btn" data-gotoscreen="#shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shops</li>
+          <li class="btn" data-gotoscreen="#deals"><i class="fa fa-tags" aria-hidden="true"></i>Deals</li>
+          <li class="btn" data-gotoscreen="#lanes"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>Lanes</li>
+          <li class="btn active" data-gotoscreen="#profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</li>
+          <li class="btn" data-gotoscreen="#login"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" name="" value="" autofocus><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    <div class="card-container scrollable">
+      <div class="shop-card">
+        <div class="badge">78%</div>
+        <div class="shop-logo factorie">
+          <img src="../images/factorie.jpeg" alt="">
+        </div>
+        <div class="information">
+          <div class="information-item">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+            <p>Clothing</p>
+          </div>
+          <div class="information-item">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <p>9am - 5pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="card large">
+        <div class="profile-image factorie-tee"></div>
+        <div class="information stretch">
+          <div class="block-heading">
+            Factorie
+          </div>
+          <div class="information-item large">
+            Buy 1 get 1 free tees
+          </div>
+        </div>
+      </div>
+      <div class="card large">
+        <div class="profile-image factorie-s-shirt"></div>
+        <div class="information stretch">
+          <div class="block-heading">
+            Factorie
+          </div>
+          <div class="information-item large">
+            20% off long sleeved tees
+          </div>
+        </div>
+      </div>
+      <div class="purchase-history">
+        <div class="heading">
+          Recent purchases
+        </div>
+        <div class="information">
+          <div class="date">
+            13/10/2017
+          </div>
+          <hr>
+          <div class="row">
+            <p class="item">Black Jeans</p>
+            <p class="price">$49.99</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
