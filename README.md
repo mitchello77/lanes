@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://lanes.mitchell-williams.com.au/><img src="https://raw.githubusercontent.com/mitchello77/lanes/master/_readme-assets/logo.png" alt="Lanes" width="250"></a>
+  <a href="https://lanes.mitchell-williams.com.au/"><img src="https://raw.githubusercontent.com/mitchello77/lanes/master/_readme-assets/logo.png" alt="Lanes" width="250"></a>
   <br>
   Lanes
   <br>
